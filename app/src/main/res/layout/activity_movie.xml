@@ -97,7 +97,7 @@
 
     <LinearLayout
         android:id="@+id/buttonLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintStart_toEndOf="@id/guideV1"
@@ -105,16 +105,29 @@
         app:layout_constraintEnd_toStartOf="@id/guideV2"
         app:layout_constraintBottom_toTopOf="@id/guideH3">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/rent"
-            android:layout_marginRight="110dp"/>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/buy"/>
+            android:layout_weight="1"
+            android:text="@string/rent" />
+        
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/buy" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
     </LinearLayout>
 
     <TextView
@@ -127,5 +140,5 @@
         app:layout_constraintTop_toBottomOf="@id/guideH3"
         app:layout_constraintEnd_toStartOf="@id/guideV2"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintVertical_bias="0"/>
+        app:layout_constraintVertical_bias="0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
